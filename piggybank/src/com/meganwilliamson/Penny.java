@@ -1,13 +1,18 @@
 package com.meganwilliamson;
 
-public class Penny
+public class Penny implements Money
 {
-    public double value = 0.01;
-    public int count;
+    public final double value = 0.01;
+    public int count = 0;
 
     public Penny()
     {
-        this.count = 1;
+        this.count += 1;
+    }
+
+    public Penny(int n)
+    {
+        this.count += n;
     }
 
     public double getValue()
@@ -20,8 +25,8 @@ public class Penny
         return count;
     }
 
-    public void setCount(int n)
+    public double getTotal()
     {
-        this.count += n;
+        return this.count * this.value;
     }
 }

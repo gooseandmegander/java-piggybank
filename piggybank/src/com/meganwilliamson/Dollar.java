@@ -1,13 +1,18 @@
 package com.meganwilliamson;
 
-public class Dollar
+public class Dollar implements Money
 {
-    public double value = 1;
-    public int count;
+    public final double value = 1;
+    public int count = 0;
 
     public Dollar()
     {
-        this.count = 1;
+        this.count += 1;
+    }
+
+    public Dollar(int n)
+    {
+        this.count += n;
     }
 
     public double getValue()
@@ -20,8 +25,8 @@ public class Dollar
         return count;
     }
 
-    public void setCount(int n)
+    public double getTotal()
     {
-        this.count += n;
+        return this.count * this.value;
     }
 }

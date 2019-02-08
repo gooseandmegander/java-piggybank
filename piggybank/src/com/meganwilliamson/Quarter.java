@@ -1,13 +1,23 @@
 package com.meganwilliamson;
 
-public class Quarter
+public class Quarter implements Money
 {
-    public double value = 0.25;
-    public int count;
+    public final double value = 0.25;
+    public int count = 0;
 
     public Quarter()
     {
-        this.count = 1;
+        this.count += 1;
+    }
+
+    public Quarter(int n)
+    {
+        this.count += n;
+    }
+
+    public void add()
+    {
+        this.count += 1;
     }
 
     public double getValue()
@@ -20,8 +30,8 @@ public class Quarter
         return count;
     }
 
-    public void setCount(int n)
+    public double getTotal()
     {
-        this.count += n;
+        return this.count * this.value;
     }
 }

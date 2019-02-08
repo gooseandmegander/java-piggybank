@@ -1,13 +1,18 @@
 package com.meganwilliamson;
 
-public class Dime
+public class Dime implements Money
 {
-    public double value = 0.10;
-    public int count;
+    public final double value = 0.10;
+    public int count = 0;
 
     public Dime()
     {
-        this.count = 1;
+        this.count += 1;
+    }
+
+    public Dime(int n)
+    {
+        this.count += n;
     }
 
     public double getValue()
@@ -20,8 +25,8 @@ public class Dime
         return count;
     }
 
-    public void setCount(int n)
+    public double getTotal()
     {
-        this.count += n;
+        return this.count * this.value;
     }
 }

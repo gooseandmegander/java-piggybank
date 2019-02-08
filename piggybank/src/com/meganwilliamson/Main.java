@@ -17,7 +17,7 @@ public class Main
         piggybank.add(new Penny(10));
 
         // print amount of each currency in bank
-
+        piggybank.printContents();
 
         // print total bank value
         System.out.println("The piggybank holds $" + piggybank.getTotal());

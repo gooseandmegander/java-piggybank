@@ -29,4 +29,9 @@ public class Dollar implements Money
     {
         return this.count * this.value;
     }
+
+    public String getName()
+    {
+        return "Dollar";
+    }
 }

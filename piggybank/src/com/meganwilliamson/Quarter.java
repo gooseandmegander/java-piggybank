@@ -34,4 +34,9 @@ public class Quarter implements Money
     {
         return this.count * this.value;
     }
+
+    public String getName()
+    {
+        return "Quarter";
+    }
 }

@@ -29,4 +29,9 @@ public class Dime implements Money
     {
         return this.count * this.value;
     }
+
+    public String getName()
+    {
+        return "Dime";
+    }
 }

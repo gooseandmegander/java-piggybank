@@ -1,16 +1,16 @@
 package com.meganwilliamson;
 
-public class Nickle implements Money
+public class Nickel implements Money
 {
     public final double value = 0.05;
     public int count = 0;
 
-    public Nickle()
+    public Nickel()
     {
         this.count += 1;
     }
 
-    public Nickle(int n)
+    public Nickel(int n)
     {
         this.count += n;
     }
@@ -32,6 +32,6 @@ public class Nickle implements Money
 
     public String getName()
     {
-        return "Nickle";
+        return "Nickel";
     }
 }

@@ -11,7 +11,7 @@ public class Main
         piggybank.add(new Quarter());
         piggybank.add(new Dime());
         piggybank.add(new Dollar(5));
-        piggybank.add(new Nickle(3));
+        piggybank.add(new Nickel(3));
         piggybank.add(new Dime(7));
         piggybank.add(new Dollar());
         piggybank.add(new Penny(10));
